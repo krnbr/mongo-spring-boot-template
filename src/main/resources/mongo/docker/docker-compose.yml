@@ -11,4 +11,4 @@ services:
         restart: always
         entrypoint: [ "/usr/bin/mongod", "--bind_ip_all", "--replSet", "rs0" ]
         volumes:
-          - ./mongodata:/data/db # This is where your volume will persist. e.g. VOLUME-DIR = ./volumes/mongodb
+          - ./mongodata:/data/db # need to create a docker volume named as mongodata first
